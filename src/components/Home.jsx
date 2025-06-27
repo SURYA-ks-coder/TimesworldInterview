@@ -171,7 +171,6 @@ export default function Home() {
           <Col xs={12} md={4} order={{ xs: 1, md: 2 }}>
             <Image
               src={image}
-              rounded
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </Col>

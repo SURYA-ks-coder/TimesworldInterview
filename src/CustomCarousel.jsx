@@ -18,12 +18,7 @@ function CustomCarousel() {
     >
       <Carousel.Item>
         {/* <ExampleCarouselImage text="First slide" /> */}
-        <Image
-          className="d-block w-100"
-          src={imag1}
-          alt="First slide"
-          rounded
-        />
+        <Image className="d-block w-100" src={imag1} alt="First slide" />
         <Carousel.Caption>
           <h5 className="  ">Induction of Cognitive Services</h5>
           <p className=" d-md-block d-none">
@@ -33,12 +28,7 @@ function CustomCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src={imag2}
-          alt="First slide"
-          rounded
-        />
+        <Image className="d-block w-100" src={imag2} alt="First slide" />
         <Carousel.Caption>
           <h5>Hospitality Solutions</h5>
           <p className=" d-md-block d-none">
@@ -50,12 +40,7 @@ function CustomCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src={imag3}
-          alt="First slide"
-          rounded
-        />
+        <Image className="d-block w-100" src={imag3} alt="First slide" />
         <Carousel.Caption>
           <h5>Research & Analytic Insights</h5>
           <p className=" d-md-block d-none">
