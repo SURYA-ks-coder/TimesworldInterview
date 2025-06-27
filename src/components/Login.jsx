@@ -99,9 +99,14 @@ export default function Login() {
             <Row className=" gap-4">
               <div className="">
                 <h2>Sign In</h2>
-                <p>
-                  New User?{" "}
-                  <span className="text-primary">Create an account</span>
+                <p style={{ fontWeight: 700 }} className="d-flex gap-2">
+                  <span> New User? </span>
+                  <span
+                    style={{ fontWeight: 600, color: "#587FFF" }}
+                    className=""
+                  >
+                    Create an account
+                  </span>
                 </p>
               </div>
               <div>
@@ -153,7 +158,7 @@ export default function Login() {
                   />
                 </Col>
                 <Col md="auto">
-                  <p style={{ fontWeight: "bold", margin: 0 }}>
+                  <p style={{ fontWeight: 700, margin: 0, fontSize: 13 }}>
                     Or Sign In With
                   </p>
                 </Col>

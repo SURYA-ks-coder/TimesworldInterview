@@ -1,39 +1,9 @@
-/* .carousel-control-next-icon {
-  position: absolute;
-  bottom: 5px;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* .carousel-control-prev-icon {
-  position: absolute;
-  width: 1rem !important;
-  height: 1rem !important;
-  bottom: 18px;
-  right: -105px;
-  color: black;
-  border-radius: 100%;
-  margin: 2px;
-} */
-.carousel-control-next-icon {
-  /* position: absolute;
-  width: 1rem !important;
-  height: 1rem !important;
-  bottom: 18px;
-  left: -105px;
-  color: black;
-  border-radius: 100%;
-  margin: 2px; */
+body {
+  font-family: "Noto Sans", sans-serif !important;
 }
-/* .carousel-control-next {
-    width: 1rem !important;
-    height: 1rem !important;
-    bottom: 18px;
-    left: -105px;
-    color: black;
-    border-radius: 100%;
-    margin: 2px;
-  } */
 
-/* Center indicators perfectly at bottom */
 .carousel-indicators {
   position: absolute;
   /* left: 50%; */
@@ -62,17 +32,15 @@
   opacity: 1;
 }
 
-/* Move prev/next icons to bottom */
 .carousel-control-prev,
 .carousel-control-next {
   top: auto !important;
-  bottom: 10px !important;
+  bottom: 20px !important;
   width: auto;
   height: auto;
   z-index: 3 !important;
 }
 
-/* Adjust position from left/right using % */
 .carousel-control-prev {
   left: 25% !important;
 }
@@ -81,7 +49,6 @@
   right: 25% !important;
 }
 
-/* Optional: Resize icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   width: 0.5rem;
@@ -125,7 +92,7 @@ input::-ms-clear {
 }
 
 .tab-item.active {
-  color: #2c4fcd;
+  color: #3d3d3d;
   font-weight: 700;
 }
 
@@ -153,34 +120,17 @@ img {
 }
 
 .custom-img {
-  width: 35% !important;
+  width: 40% !important;
   height: auto;
   object-fit: cover;
-  border-radius: 14px !important;
 }
-/* Card CSS */
-
-/* .responsive-card {
-  height: "100px" !important;
-  display: "flex" !important;
-  flex-direction: "row" !important;
-  background-color: #ffffff;
-  z-index: 1 !important;
-}
-
-
-
-.responsive-card .card-body {
-  flex: 1;
-  overflow: hidden;
-} */
 
 /* Social media */
 
 .icon-wrapper {
   width: 40px;
   height: 40px;
-  border: 1px solid #ccc;
+  border: 2px solid #3e3e3e;
   border-radius: 50%;
   padding: 8px;
   transition: all 0.3s ease;
@@ -188,13 +138,22 @@ img {
 
 .icon-wrapper:hover {
   background-color: #f1f1f1;
-  border-color: #007bff;
+  border-color: #ccc;
   cursor: pointer;
 }
 
 .icon-wrapper svg {
   width: 20px;
   height: 20px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: 2px solid #3e3e3e !important;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0 !important;
+  border: 2px solid #3e3e3e !important;
 }
 
 /* Shadow Layer */
@@ -247,4 +206,46 @@ hr {
 }
 .card {
   border-radius: 0 !important;
+}
+
+.btn {
+  --bs-btn-border-radius: 0 !important;
+}
+
+h2 {
+  font-size: 32px !important;
+}
+h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+p {
+  font-size: 16px !important;
+}
+p.footerText {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 1024px) {
+  h5,
+  .h5 {
+    font-size: 18px !important;
+  }
+  p,
+  .p {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  h5,
+  .h5 {
+    font-size: 16px !important;
+  }
+  p,
+  .p {
+    font-size: 12px !important;
+  }
 }

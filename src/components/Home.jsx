@@ -26,7 +26,7 @@ import { MdOutlineMenu } from "react-icons/md";
 export default function Home() {
   const [activeTab, setActiveTab] = useState("All");
 
-  const tabs = ["All", "Asia", "Europe"];
+  const tabs = ["All", "Asia", "Europe", "Americas"];
   // const [countries, setCountries] = useState([]);
   const [filterCountries, setFilterCountries] = useState([]);
   const [visibleCount, setVisibleCount] = useState(10);
@@ -130,20 +130,32 @@ export default function Home() {
         <>
           <Row className="d-none d-md-flex justify-content-center align-items-center py-3">
             <Col md="4">
-              <div style={{ borderBottom: "2px solid #333", width: "100%" }} />
+              <div
+                style={{
+                  borderTop: "3px solid #333",
+                  width: "100%",
+                  height: 20,
+                }}
+              />
             </Col>
             <Col md="auto">
               <h4 style={{ fontWeight: "bold", margin: 0 }}>WELCOME</h4>
             </Col>
             <Col md="4">
-              <div style={{ borderBottom: "2px solid #333", width: "100%" }} />
+              <div
+                style={{
+                  borderBottom: "3px solid #333",
+                  width: "100%",
+                  height: 20,
+                }}
+              />
             </Col>
           </Row>
 
           <div className="d-block d-md-none text-center py-3">
-            <div style={{ borderBottom: "2px solid #333", width: "100%" }} />
+            <div style={{ borderBottom: "3px solid #333", width: "100%" }} />
             <h4 style={{ fontWeight: "bold", margin: "10px 0" }}>WELCOME</h4>
-            <div style={{ borderBottom: "2px solid #333", width: "100%" }} />
+            <div style={{ borderBottom: "3px solid #333", width: "100%" }} />
           </div>
         </>
 
@@ -237,16 +249,10 @@ export default function Home() {
             ))}
           </div>
 
-          <p
-            className="d-flex justify-content-center align-items-center mb-0 fw-bolder text-secondary"
-            style={{ fontSize: "12px" }}
-          >
+          <p className="d-flex justify-content-center align-items-center mb-0 fw-bolder text-secondary footerText">
             Employee@email.com
           </p>
-          <p
-            className="d-flex justify-content-center align-items-center  fw-bolder text-secondary"
-            style={{ fontSize: "12px" }}
-          >
+          <p className="d-flex justify-content-center align-items-center  fw-bolder text-secondary footerText">
             Copyright 2020 Name. All rightsreserved.
           </p>
         </Row>

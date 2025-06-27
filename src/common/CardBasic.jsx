@@ -7,7 +7,7 @@ export default function CardBasic({ image, Title, description }) {
     <Card
       style={{
         // width: "36rem",
-        height: "100px",
+        height: "120px",
         display: "flex",
         flexDirection: "row",
         zIndex: 1,
@@ -16,7 +16,13 @@ export default function CardBasic({ image, Title, description }) {
     >
       <Card.Img src={image} className="custom-img p-2" rounded />
       <Card.Body>
-        <Card.Title>{Title}</Card.Title>
+        <Card.Title
+          style={{
+            fontWeight: 600,
+          }}
+        >
+          {Title}
+        </Card.Title>
         <Card.Text>{description}</Card.Text>
       </Card.Body>
     </Card>

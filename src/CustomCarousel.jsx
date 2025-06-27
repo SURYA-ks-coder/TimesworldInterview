@@ -3,6 +3,7 @@ import { Carousel, Image } from "react-bootstrap";
 import imag1 from "../src/assets/1521557364-Image_18.jpg";
 import imag2 from "../src/assets/1594740512-hotel.jpg";
 import imag3 from "../src/assets/1521554893-Image_09.jpg";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 function CustomCarousel() {
   const [index, setIndex] = useState(0);
@@ -15,6 +16,8 @@ function CustomCarousel() {
       activeIndex={index}
       onSelect={handleSelect}
       // style={{ width: "807px", height: "498px" }}
+      prevIcon={<FaArrowLeftLong />}
+      nextIcon={<FaArrowRightLong />}
     >
       <Carousel.Item>
         {/* <ExampleCarouselImage text="First slide" /> */}
