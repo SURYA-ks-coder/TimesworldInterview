@@ -7,6 +7,7 @@ import {
   Image,
   Modal,
   Row,
+  Spinner,
   Tab,
   Tabs,
 } from "react-bootstrap";
@@ -211,17 +212,24 @@ export default function Home() {
           </Col>
         </Row> */}
 
-        <Row className="py-4 " style={{ width: "100%" }}>
-          {filterCountries?.slice(0, visibleCount).map((each, i) => (
-            <Col md={6} key={i} className=" position-relative my-3">
-              <CardBasic
-                Title={each.name}
-                description={each.region}
-                image={each.flag}
-              />
-              <div className="shadow-layer position-absolute"></div>
-            </Col>
-          ))}
+        <Row
+          className="py-4 d-flex justify-content-center align-items-center "
+          style={{ width: "100%" }}
+        >
+          {filterCountries?.length > 0 ? (
+            filterCountries?.slice(0, visibleCount).map((each, i) => (
+              <Col md={6} key={i} className=" position-relative my-3">
+                <CardBasic
+                  Title={each.name}
+                  description={each.region}
+                  image={each.flag}
+                />
+                <div className="shadow-layer position-absolute"></div>
+              </Col>
+            ))
+          ) : (
+            <Spinner animation="border" />
+          )}
         </Row>
         {visibleCount <= filterCountries.length ? (
           <div className=" d-flex justify-content-center py-2">
