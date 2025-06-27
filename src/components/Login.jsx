@@ -147,8 +147,8 @@ export default function Login() {
                   Sign In
                 </Button>
               </div>
-              <Row className="d-none d-md-flex justify-content-center align-items-center py-3">
-                <Col md="">
+              <Row className=" d-flex justify-content align-items-center py-3">
+                <Col>
                   <div
                     style={{
                       borderBottom: "2px solid ",
@@ -157,12 +157,12 @@ export default function Login() {
                     }}
                   />
                 </Col>
-                <Col md="auto">
+                <Col className="col-4 text-center px-0">
                   <p style={{ fontWeight: 700, margin: 0, fontSize: 13 }}>
                     Or Sign In With
                   </p>
                 </Col>
-                <Col md="">
+                <Col>
                   <div
                     style={{
                       borderBottom: "2px solid ",
